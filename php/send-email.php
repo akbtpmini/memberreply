@@ -13,14 +13,13 @@ function url(){
 
 if($_POST) {
 
-   $number = trim(stripslashes($_POST['number']));
+   $number = trim(stripslashes($_POST['member']));
    $name = trim(stripslashes($_POST['name']));
    $email = trim(stripslashes($_POST['email']));
    $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
 
    $phone = trim(stripslashes($_POST['phone']));
-   $company = trim(stripslashes($_POST['company']));
 
    if ($phone == '') { $phone = "N/A"; }
    if ($company == '') { $company = "N/A"; }
