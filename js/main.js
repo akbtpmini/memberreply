@@ -9,15 +9,10 @@ $(function() {
 		if ($('#contactForm').length > 0 ) {
 			$( "#contactForm" ).validate( {
 				rules: {
-					member: "required",
 					name: "required",
 					email: {
 						required: true,
 						email: true
-					},
-					phone: {
-						required: true,
-						phone: true
 					},
 					message: {
 						required: true,
@@ -25,11 +20,9 @@ $(function() {
 					}
 				},
 				messages: {
-					member: "請輸入您的會員編號",
-					name: "請輸入您的姓名",
-					email: "請輸入有效的電子郵件地址",
-					message: "請輸入訊息",
-					phone: "請輸入有效的電話號碼"
+					name: "Please enter your name",
+					email: "Please enter a valid email address",
+					message: "Please enter a message"
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		
