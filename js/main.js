@@ -25,6 +25,7 @@ $(function() {
 					}
 				},
 				messages: {
+					member: "請輸入您的會員編號",
 					name: "請輸入您的姓名",
 					email: "請輸入有效的電子郵件地址",
 					message: "請輸入訊息",
