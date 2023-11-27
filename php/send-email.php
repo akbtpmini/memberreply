@@ -1,7 +1,7 @@
 <?php
 
 // Replace this with your own email address
-$to = 'mini.wang@akb48-tp.com';
+$to = 'joefrey.mahusay@gmail.com';
 
 function url(){
   return sprintf(
@@ -13,13 +13,13 @@ function url(){
 
 if($_POST) {
 
-   $number = trim(stripslashes($_POST['member']));
    $name = trim(stripslashes($_POST['name']));
    $email = trim(stripslashes($_POST['email']));
    $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
 
    $phone = trim(stripslashes($_POST['phone']));
+   $company = trim(stripslashes($_POST['company']));
 
    if ($phone == '') { $phone = "N/A"; }
    if ($company == '') { $company = "N/A"; }
@@ -28,12 +28,11 @@ if($_POST) {
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-   $message .= "會員編號: " . $member . "<br />";
-   $message .= "姓名: " . $name . "<br />";
-	$message .= "聯絡信箱 : " . $email . "<br />";
-   $message .= "聯絡電話: " . $phone . "<br />";
-   // $message .= "Company: " . $company . "<br />";
-   $message .= "諮詢內容: <br />";
+   $message .= "Email from: " . $name . "<br />";
+	 $message .= "Email address: " . $email . "<br />";
+   $message .= "Phone: " . $phone . "<br />";
+   $message .= "Company: " . $company . "<br />";
+   $message .= "Message: <br />";
    $message .= nl2br($contact_message);
    $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";
 
