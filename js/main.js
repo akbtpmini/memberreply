@@ -14,15 +14,20 @@ $(function() {
 						required: true,
 						email: true
 					},
+					phone: {
+						required: true,
+						phone: true
+					},
 					message: {
 						required: true,
 						minlength: 5
 					}
 				},
 				messages: {
-					name: "Please enter your name",
-					email: "Please enter a valid email address",
-					message: "Please enter a message"
+					name: "請輸入您的姓名",
+					email: "請輸入有效的電子郵件地址",
+					message: "請輸入訊息",
+					phone: "請輸入有效的電話號碼"
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		
