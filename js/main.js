@@ -9,6 +9,7 @@ $(function() {
 		if ($('#contactForm').length > 0 ) {
 			$( "#contactForm" ).validate( {
 				rules: {
+					member: "required",
 					name: "required",
 					email: {
 						required: true,
