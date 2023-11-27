@@ -28,7 +28,7 @@ if($_POST) {
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-   $message .= "會員編號: " . $number . "<br />";
+   $message .= "會員編號: " . $member . "<br />";
    $message .= "姓名: " . $name . "<br />";
 	$message .= "聯絡信箱 : " . $email . "<br />";
    $message .= "聯絡電話: " . $phone . "<br />";
